@@ -18,6 +18,9 @@ const httpLink = createHttpLink({
   uri: 'http://localhost:4000',
 })
 
+// "build": "react-scripts build",
+
+
 const authLink = setContext((_, { headers }) => {
   const token = localStorage.getItem(AUTH_TOKEN)
   return {
